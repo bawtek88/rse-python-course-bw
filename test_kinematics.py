@@ -2,7 +2,7 @@ import pint
 import pytest
 import kinematics
 
-si = kinematics.si
+si = kinematics._si
 
 def test_calculate_current_velocity_correctness():
     value = kinematics.calculate_current_velocity(3, 3, 3)
