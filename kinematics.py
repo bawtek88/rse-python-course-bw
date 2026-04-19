@@ -3,28 +3,28 @@ import pint
 si = pint.UnitRegistry()
 
 def calculate_current_velocity(V0, a, t) -> pint.Quantity:
-    """Calculate the velocity of an object at time t.
+    """Calculate the velocity of an object at time t, using the formula $$v = v_0 + at$$.
 
     Parameters
     ----------
     V0 : float or pint.Quantity 
-        initial velocity of an object(velocity at time t = 0), by default in meters per second (m/s)
+        Initial velocity of the object ($v_0$) at time $t = 0$, by default in meters per second (m/s).
     a : float or pint.Quantity
-        acceleration of an object, by default in meters per seconds squared (m/s^2)
+        Constant acceleration of the object, by default in meters per second squared (m/s^2).
     t : float or pint.Quantity
-        time at which we want to calculate the velocity,nonnegative, by default in seconds (s)
+        Time at which we want to calculate the velocity, nonnegative, by default in seconds (s).
     
     Returns
     -------
     pint.Quantity
-        velocity at time t, in meters per second (m/s)
+        Velocity at time $t$, in meters per second (m/s).
 
     Raises
     ------
     ValueError
-        if time t is negative
+        If time `t` is negative.
     pint.errors.DimensionalityError
-        if input has incompatible units
+        If any input has incompatible units
     """
     
     
