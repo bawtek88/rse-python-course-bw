@@ -51,14 +51,14 @@ kinematics    </h1>
 </span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="n">_si</span> <span class="o">=</span> <span class="n">pint</span><span class="o">.</span><span class="n">UnitRegistry</span><span class="p">()</span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="k">def</span> <span class="nf">calculate_current_velocity</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">:</span>
+</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="k">def</span> <span class="nf">calculate_current_velocity</span><span class="p">(</span><span class="n">V0</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">:</span>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate the velocity of an object at time `t`.  </span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">    Formula: `V = V0 + a * t`.  </span>
 </span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a>
 </span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="sd">    Parameters</span>
 </span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a><span class="sd">    ----------</span>
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="sd">    V0 : float or pint.Quantity  </span>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="sd">        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).</span>
+</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="sd">        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).  </span>
 </span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a><span class="sd">    a : float or pint.Quantity  </span>
 </span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a><span class="sd">        Acceleration of an object, by default in meters per second squared (m/s^2).  </span>
 </span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a><span class="sd">    t : float or pint.Quantity  </span>
@@ -102,20 +102,20 @@ kinematics    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">calculate_current_velocity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">V0</span>, </span><span class="param"><span class="n">a</span>, </span><span class="param"><span class="n">t</span></span><span class="return-annotation">) -> <span class="n">pint</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">Quantity</span>:</span></span>
+        <span class="name">calculate_current_velocity</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">V0</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">Quantity</span>,</span><span class="param">	<span class="n">a</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">Quantity</span>,</span><span class="param">	<span class="n">t</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">Quantity</span></span><span class="return-annotation">) -> <span class="n">pint</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">Quantity</span>:</span></span>
 
                 <label class="view-source-button" for="calculate_current_velocity-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#calculate_current_velocity"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="calculate_current_velocity-6"><a href="#calculate_current_velocity-6"><span class="linenos"> 6</span></a><span class="k">def</span> <span class="nf">calculate_current_velocity</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">:</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="calculate_current_velocity-6"><a href="#calculate_current_velocity-6"><span class="linenos"> 6</span></a><span class="k">def</span> <span class="nf">calculate_current_velocity</span><span class="p">(</span><span class="n">V0</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pint</span><span class="o">.</span><span class="n">Quantity</span><span class="p">:</span>
 </span><span id="calculate_current_velocity-7"><a href="#calculate_current_velocity-7"><span class="linenos"> 7</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate the velocity of an object at time `t`.  </span>
 </span><span id="calculate_current_velocity-8"><a href="#calculate_current_velocity-8"><span class="linenos"> 8</span></a><span class="sd">    Formula: `V = V0 + a * t`.  </span>
 </span><span id="calculate_current_velocity-9"><a href="#calculate_current_velocity-9"><span class="linenos"> 9</span></a>
 </span><span id="calculate_current_velocity-10"><a href="#calculate_current_velocity-10"><span class="linenos">10</span></a><span class="sd">    Parameters</span>
 </span><span id="calculate_current_velocity-11"><a href="#calculate_current_velocity-11"><span class="linenos">11</span></a><span class="sd">    ----------</span>
 </span><span id="calculate_current_velocity-12"><a href="#calculate_current_velocity-12"><span class="linenos">12</span></a><span class="sd">    V0 : float or pint.Quantity  </span>
-</span><span id="calculate_current_velocity-13"><a href="#calculate_current_velocity-13"><span class="linenos">13</span></a><span class="sd">        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).</span>
+</span><span id="calculate_current_velocity-13"><a href="#calculate_current_velocity-13"><span class="linenos">13</span></a><span class="sd">        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).  </span>
 </span><span id="calculate_current_velocity-14"><a href="#calculate_current_velocity-14"><span class="linenos">14</span></a><span class="sd">    a : float or pint.Quantity  </span>
 </span><span id="calculate_current_velocity-15"><a href="#calculate_current_velocity-15"><span class="linenos">15</span></a><span class="sd">        Acceleration of an object, by default in meters per second squared (m/s^2).  </span>
 </span><span id="calculate_current_velocity-16"><a href="#calculate_current_velocity-16"><span class="linenos">16</span></a><span class="sd">    t : float or pint.Quantity  </span>
@@ -159,7 +159,7 @@ Formula: <code>V = V0 + a * t</code>.  </p>
 <h2 id="parameters">Parameters</h2>
 
 <p>V0 : float or pint.Quantity<br />
-    Initial velocity of an object (velocity at time <code>t=0</code>), by default in meters per second (m/s).
+    Initial velocity of an object (velocity at time <code>t=0</code>), by default in meters per second (m/s).<br />
 a : float or pint.Quantity<br />
     Acceleration of an object, by default in meters per second squared (m/s^2).<br />
 t : float or pint.Quantity<br />
