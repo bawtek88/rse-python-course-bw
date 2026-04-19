@@ -17,7 +17,7 @@ def calculate_current_velocity(V0, a, t) -> pint.Quantity:
     Returns
     -------
     pint.Quantity
-        Velocity at time t, in meters per second (m/s)
+        velocity at time t, in meters per second (m/s)
 
     Raises
     ------
