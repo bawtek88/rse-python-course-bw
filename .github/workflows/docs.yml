@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-      - run: pip install pdoc; python -m pdoc -o html kinematics
+      - run: pip install . pdoc; python -m pdoc -o html kinematics
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: html
