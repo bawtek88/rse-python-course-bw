@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mc_pi"
+version = "0.1.0"
+license = { text = "GPL-3.0-or-later" }
+
+[tool.setuptools]
+py-modules = ["mc_pi"]
