@@ -8,5 +8,8 @@ version = "0.1.0"
 license = { text = "GPL-3.0-or-later" }
 dependencies = ["pint>=0.25"]
 
+[project.optional-dependencies]
+test = ["pytest"]
+
 [tool.setuptools]
 py-modules = ["kinematics"]
