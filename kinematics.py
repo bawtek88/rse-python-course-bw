@@ -2,14 +2,14 @@ import pint
 
 _si = pint.UnitRegistry()
 
-def calculate_current_velocity(V0, a, t) -> pint.Quantity:
+def calculate_current_velocity(V0: float | pint.Quantity, a: float | pint.Quantity, t: float | pint.Quantity) -> pint.Quantity:
     """Calculate the velocity of an object at time `t`.  
     Formula: `V = V0 + a * t`.  
 
     Parameters
     ----------
     V0 : float or pint.Quantity  
-        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).
+        Initial velocity of an object (velocity at time `t=0`), by default in meters per second (m/s).  
     a : float or pint.Quantity  
         Acceleration of an object, by default in meters per second squared (m/s^2).  
     t : float or pint.Quantity  
