@@ -12,7 +12,7 @@ def test_calculate_current_velocity_correctness():
 
 def test_calculate_current_velocity_correct_units():
     value = kinematicsbw.calculate_current_velocity(
-        36 * si.km / si.h,
+        36 * si.km / si.hour,
         400 * si.cm / si.s**2,
         1 * si.s,
     )
