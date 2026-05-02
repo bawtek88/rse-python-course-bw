@@ -3,13 +3,13 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kinematics"
-version = "0.1.0"
+name = "kinematicsbw"
+version = "0.2.0"
 license = { text = "GPL-3.0-or-later" }
-dependencies = ["pint>=0.25"]
+dependencies = ["pint==0.18"]
 
 [project.optional-dependencies]
 test = ["pytest"]
 
 [tool.setuptools]
-py-modules = ["kinematics"]
+py-modules = ["kinematicsbw"]
