@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kinematicsbw"
-version = "0.3.1"
+version = "0.4.0"
+description "Small kinematics package"
 license = { text = "GPL-3.0-or-later" }
 dependencies = ["pint==0.25"]
 
@@ -13,3 +14,7 @@ test = ["pytest"]
 
 [tool.setuptools]
 py-modules = ["kinematicsbw"]
+
+[project.urls]
+Repository = "https://github.com/bawtek88/rse-python-course-bw"
+Documentation = "https://bawtek88.github.io/rse-python-course-bw/"
